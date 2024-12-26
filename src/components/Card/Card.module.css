@@ -1,0 +1,22 @@
+.course {
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.thumbnail {
+  margin-bottom: 1rem;
+  aspect-ratio: 16/9;
+  background: #ccc;
+  border-radius: 15px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.details h3 {
+  font-size: 1.2rem;
+}

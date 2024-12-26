@@ -1,0 +1,14 @@
+.stats {
+  padding: 1rem;
+  font-size: 1.2rem;
+  aspect-ratio: 2/1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.stats p {
+  text-transform: uppercase;
+  margin: 5px 0;
+  letter-spacing: 3px;
+  font-weight: 200;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,202 @@
+.homePage {
+  padding: 2.5vh 5vw;
+}
+
+.heroSection {
+  margin: 15vh 0;
+  text-align: center;
+}
+
+.heroSection > h1 {
+  font-size: 2.5rem;
+}
+
+.heroSection > p {
+  margin: 1rem auto;
+  max-width: 600px;
+  font-size: 1rem;
+}
+
+.learnMoreButton {
+  padding: 1rem 2rem;
+  background: #ccc;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.featuresSection {
+  margin-top: 20vh;
+  margin-bottom: 15vh;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.overviewSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.overviewSection > div {
+  min-width: 400px;
+  flex: 1;
+}
+
+.overviewSection div h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.overviewSection div p {
+  font-size: 1rem;
+}
+
+.imageContainer {
+  background: #ccc;
+}
+
+.statsContainer {
+  margin: 15vh 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.coursesContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.newsArticlesSection {
+  margin: 15vh 0;
+}
+
+.articlesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.articlesContainer .details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.article {
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.customerReviewsSection {
+  text-align: center;
+}
+
+.review {
+  margin: 2rem auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+.profile {
+  margin-bottom: 1rem;
+  height: 100px;
+  width: 100px;
+  background: #ccc;
+}
+
+.customerReviewsSection > h2 {
+  margin-top: 10vh;
+  font-size: 1.5rem;
+}
+
+.companiesContainer {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.company {
+  aspect-ratio: 2/1;
+  background: #ccc;
+}
+
+.newsletterSection {
+  margin: 15vh 0;
+  text-align: center;
+}
+
+.newsletterSection h2 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.newsletterSection form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.newsletterSection form input {
+  padding: 1rem;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 40vw;
+}
+
+.newsletterSection form button {
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  background: #2e2e2e;
+  color: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.letUsHelpSection {
+  margin: 15vh 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+.image {
+  aspect-ratio: 1/1;
+  width: 100%;
+  background: #ccc;
+}
+
+.letUsHelpSection section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+}
+
+.letUsHelpSection section p {
+  width: 60%;
+}
+
+.letUsHelpSection section span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.letUsHelpSection section .icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #ccc;
+}
