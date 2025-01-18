@@ -1,0 +1,38 @@
+.heroSection {
+  height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+}
+
+.heroSection > h1 {
+  font-size: 2.5rem;
+  line-height: 120%;
+}
+
+.heroSection > p {
+  font-size: 1rem;
+}
+
+.learnMoreButton {
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  background: #cccccc50;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 700;
+
+  transition-property: background, color;
+  transition: 0.25s ease-in-out;
+
+  &:hover {
+    background: #ccc;
+    color: #2e2e2e;
+  }
+}

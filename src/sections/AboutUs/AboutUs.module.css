@@ -1,0 +1,40 @@
+.aboutUs {
+  background: #ffffff10;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  border-radius: 3rem 3rem 0 0;
+}
+
+.leftColumn,
+.rightColumn {
+  padding: 5vh 5vw;
+
+  width: 100%;
+  max-width: 600px;
+}
+
+.leftColumn h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.leftColumn ul {
+  padding: 1rem 2rem;
+}
+
+.rightColumn img {
+  width: 100%;
+  animation: spark 2s infinite alternate;
+}
+
+@keyframes spark {
+  from {
+    filter: drop-shadow(0px 0px 40px #ffffff20);
+  }
+  to {
+    filter: drop-shadow(0px 0px 40px #ffffff60);
+  }
+}

@@ -1,0 +1,19 @@
+.solutions h2 {
+  font-size: 2rem;
+}
+
+.solutions ul {
+  margin: 2rem 0;
+  list-style: decimal;
+  list-style-position: inside;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.solutions ul li {
+  padding: 2rem;
+  border-radius: 1rem 0 1rem 0;
+  background: #ffffff30;
+}

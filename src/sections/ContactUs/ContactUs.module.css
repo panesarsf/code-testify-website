@@ -1,0 +1,9 @@
+.contactUsSection {
+  margin-bottom: 10vh;
+}
+.contactUsSection h2 {
+  font-size: 2rem;
+}
+.contactUsSection p {
+  max-width: 700px;
+}

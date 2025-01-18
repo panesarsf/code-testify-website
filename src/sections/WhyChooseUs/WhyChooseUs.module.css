@@ -1,0 +1,12 @@
+.whyChooseUsSection {
+  margin: 10vh 0;
+}
+.whyChooseUsSection h2 {
+  font-size: 2rem;
+}
+.whyChooseUsSection p {
+  max-width: 700px;
+}
+.whyChooseUsSection ul {
+  padding: 1rem 2rem;
+}

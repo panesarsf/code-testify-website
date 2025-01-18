@@ -1,0 +1,73 @@
+.services {
+  margin-top: 5vh;
+  padding: 5vh 2.5vw;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.service {
+  margin: 1rem 0;
+  padding: 2rem;
+
+  width: 380px;
+  background: #ffffff20;
+  border-radius: 1rem;
+}
+.service ul {
+  padding: 1rem;
+}
+
+.salesforceServices {
+  margin: 10vh 0;
+}
+.salesforceServices .container {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+.salesforceServices .service {
+  animation: horizontalScroll 20s linear infinite alternate;
+  min-width: 700px;
+}
+
+.certificateSection {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 10vh 2.5vw;
+  background: #ffffff10;
+  border-radius: 3rem;
+}
+.certificateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+img {
+  width: 10vw;
+  min-width: 70px;
+}
+
+@keyframes horizontalScroll {
+  from {
+    transform: translateX(25%);
+  }
+  to {
+    transform: translateX(-475%);
+  }
+}

@@ -1,12 +1,18 @@
 .feature {
-  height: 300px;
+  width: 300px;
+  margin-bottom: 2rem;
+
   background: #ccc;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   text-align: center;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
+
+  border-radius: 1rem;
 }
 
 .icon {
@@ -16,8 +22,8 @@
   border-radius: 50%;
 }
 
-.icon,
 .feature h3,
-.feature p {
-  transform: translateY(-50px);
+.feature p,
+.icon {
+  transform: translateY(-35px);
 }
