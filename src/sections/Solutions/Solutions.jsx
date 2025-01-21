@@ -10,7 +10,7 @@ const Solutions = () => {
         Tailored to meet the unique needs of your business, our solutions focus
         on innovation and sustainability:
       </p>
-      <ul className={styles.container}>
+      <ol className={styles.container}>
         <li className={styles.solution}>
           <h3>Custom Software Development</h3>
           <p>Solutions built to align with your business goals.</p>
@@ -23,7 +23,7 @@ const Solutions = () => {
           <h3>Internet of Things (IoT)</h3>
           <p>Smart solutions to connect and optimize your devices.</p>
         </li>
-      </ul>
+      </ol>
     </div>
   );
 };

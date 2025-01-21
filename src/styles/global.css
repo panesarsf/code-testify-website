@@ -13,11 +13,11 @@ body {
   line-height: 1.6;
   font-size: 0.9rem;
 
-  background: radial-gradient(at 11% 44%, #1b1f3b 0px, transparent 50%),
+  /* background: radial-gradient(at 11% 44%, #1b1f3b 0px, transparent 50%),
     radial-gradient(at 5% 89%, #4e4c67 0px, transparent 50%),
     radial-gradient(at 65% 33%, #2f2fa2 0px, transparent 50%),
     radial-gradient(at 100% 32%, #722ac6 0px, transparent 50%) #000000;
-  color: #fff;
+  color: #fff; */
 }
 
 a {

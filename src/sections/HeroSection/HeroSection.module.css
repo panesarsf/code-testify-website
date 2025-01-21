@@ -21,7 +21,7 @@
 .learnMoreButton {
   margin: 1rem 0;
   padding: 1rem 2rem;
-  background: #cccccc50;
+  background: #2e2e2e;
   color: #fff;
   border: none;
   border-radius: 2rem;
@@ -32,7 +32,7 @@
   transition: 0.25s ease-in-out;
 
   &:hover {
-    background: #ccc;
+    background: #2e2e2e20;
     color: #2e2e2e;
   }
 }

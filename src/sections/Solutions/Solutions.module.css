@@ -1,10 +1,13 @@
 .solutions h2 {
-  font-size: 2rem;
+  font-size: 3vw;
+}
+.solutions > p {
+  font-size: 1.25rem;
+  line-height: 150%;
 }
 
-.solutions ul {
+.solutions ol {
   margin: 2rem 0;
-  list-style: decimal;
   list-style-position: inside;
 
   display: flex;
@@ -12,8 +15,15 @@
   justify-content: space-between;
   gap: 1rem;
 }
-.solutions ul li {
+.solutions ol li {
   padding: 2rem;
   border-radius: 1rem 0 1rem 0;
-  background: #ffffff30;
+  background: #2e2e2e;
+  color: #fff;
+
+  transition: border-radius 0.25s ease-in-out;
+
+  &:hover {
+    border-radius: 2rem;
+  }
 }

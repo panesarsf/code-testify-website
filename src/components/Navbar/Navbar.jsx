@@ -4,16 +4,59 @@ import { AiOutlineClose } from "react-icons/ai";
 import styles from "./Navbar.module.css";
 
 const links = [
-  { to: "/", label: "Home" },
-  { to: "#about-us", label: "About Us" },
-  { to: "#services", label: "Services" },
-  { to: "#salesforce", label: "Salesforce" },
-  { to: "#solutions", label: "Solutions" },
+  {
+    to: "#services",
+    label: "Build",
+    submenu: [
+      "Custom Software Development",
+      "Web Application Development",
+      "Salesforce Implementation and Customization",
+      "Internet of Things (IoT) Solutions",
+      "Digital Lending Solutions",
+    ],
+  },
+  {
+    to: "#salesforce",
+    label: "Run",
+    submenu: [
+      "Software Automation",
+      "Robotic Process Automation (RPA)",
+      "DevOps Solutions",
+      "Site Reliability Engineering (SRE)",
+      "Integration Services",
+    ],
+  },
+  {
+    to: "#solutions",
+    label: "Test",
+    submenu: [
+      "Quality Assurance (QA)",
+      "Performance Assurance",
+      "Cloud Assurance",
+      "Functional Assurance",
+      "Application Performance Management (APM)",
+    ],
+  },
+  { to: "#about-us", label: "About" },
   { to: "tel:+123-456-7890", label: "Schedule" },
 ];
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+
+  const [dropdown, setDropdown] = useState({
+    Build: false,
+    Run: false,
+    Test: false,
+  });
+
+  const handleMouseEnter = (link) => {
+    setDropdown((prev) => ({ ...prev, [link]: true }));
+  };
+
+  const handleMouseLeave = (link) => {
+    setDropdown((prev) => ({ ...prev, [link]: false }));
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -31,10 +74,21 @@ const Navbar = () => {
           />
         </li>
         {links.map((link) => (
-          <li key={link.to}>
+          <li
+            key={link.to}
+            onMouseEnter={() => handleMouseEnter(link.label)}
+            onMouseLeave={() => handleMouseLeave(link.label)}
+          >
             <a href={link.to} onClick={() => setMenu(false)}>
               {link.label}
             </a>
+            {link.submenu && dropdown[link.label] && (
+              <ol>
+                {link.submenu.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ol>
+            )}
           </li>
         ))}
       </ul>

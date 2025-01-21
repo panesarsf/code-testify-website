@@ -1,5 +1,6 @@
 .aboutUs {
-  background: #ffffff10;
+  background: #2e2e2e;
+  color: #ffffff;
 
   display: flex;
   align-items: center;
@@ -7,6 +8,9 @@
   flex-wrap: wrap;
 
   border-radius: 3rem 3rem 0 0;
+
+  animation: slideUp alternate;
+  animation-timeline: view();
 }
 
 .leftColumn,
@@ -28,6 +32,15 @@
 .rightColumn img {
   width: 100%;
   animation: spark 2s infinite alternate;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(25%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
 }
 
 @keyframes spark {
